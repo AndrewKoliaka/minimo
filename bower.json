@@ -1,0 +1,20 @@
+{
+  "name": "minimo",
+  "description": "converting psd to html",
+  "main": "index.html",
+  "authors": [
+    "andrew.koliaka"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-grid-only": "^1.0.0"
+  }
+}
