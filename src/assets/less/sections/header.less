@@ -1,0 +1,30 @@
+header {
+    padding-top: 70px;
+    height: 670px;
+    nav {
+        height: 100%;
+        .bg_image('../images/header_bg.jpg');
+        img {
+            float: left;
+            display: inline-block;
+        }
+        ul {
+            color: @accent;
+            float: right;
+            display: inline-block;
+            list-style-type: none;
+            margin-top: (23px - 19px) / 2;
+            li {
+                display: inline-block;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                margin-right: 120px;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+}
