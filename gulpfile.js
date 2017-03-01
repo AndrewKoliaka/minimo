@@ -28,17 +28,19 @@ gulp.task('less', () => {
 });
 
 gulp.task('js', () => {
-    connect.reload();
+    gulp.src('src/js/*.js')
+        .pipe(connect.reload());
 });
 
 gulp.task('html', () => {
-    connect.reload();
+    gulp.src('index.html')
+        .pipe(connect.reload());
 });
 
 gulp.task('watch', () => {
     gulp.watch(pathTo.less, ['less']);
     gulp.watch(pathTo.js, ['js']);
-    gulp.watch('index.html', ['html']);
+    gulp.watch('./index.html', ['html']);
 });
 
 gulp.task('default', ['less', 'connect', 'watch']);
