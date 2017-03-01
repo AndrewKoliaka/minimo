@@ -1,0 +1,30 @@
+footer {
+    margin-top: 150px;
+    background-color: @bg_gray;
+    height: 97px;
+    .footer_el {
+        margin-top: (97px - 24px) /2px;
+        li {
+            margin-left: 18px;
+        }
+        .footer_menu {
+            li {
+                a {
+                    font-size: 1em;
+                    color: black;
+                    &:hover {
+                        color: @accent;
+                    }
+                }
+            }
+        }
+        .social {
+            a {
+                color: @accent;
+                &:hover {
+                    color: black;
+                }
+            }
+        }
+    }
+}
