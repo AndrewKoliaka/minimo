@@ -22,3 +22,59 @@ header {
         }
     }
 }
+
+//responsive menu
+#menu-trigger {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    #logo {
+        margin-left: 10px;
+    }
+    header nav ul {
+        margin-right: 10px;
+    }
+    header nav ul li {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:758px) {
+    #menu-trigger {
+        cursor: pointer;
+        font-family: Ubuntu-Light;
+        margin-right: 10px;
+        font-size: 2em;
+        line-height: 1;
+        display: block;
+        margin-top: -(32px - 23px) / 2;
+        &:hover {
+            color: gray;
+        }
+    }
+    header {
+        height: 470px;
+        #logo {
+            margin-left: 10px;
+        }
+        ul {
+            display: none;
+            border-top: thin solid @text_gray;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            width: 100%;
+            opacity: 0.9;
+            background-color: white;
+            li {
+                margin-left: 10px;
+                margin-top: 15px;
+                display: block;
+                &:last-of-type {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@ footer {
     margin-top: 150px;
     background-color: @bg_gray;
     height: 97px;
-    .footer_el {
+    #footer_line {
         margin-top: (97px - 24px) /2px;
         li {
             margin-left: 18px;
@@ -26,5 +26,25 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 767px) {
+    footer {
+        #footer_line {
+            text-align: center;
+            .social {
+                float: none;
+            }
+            .footer_menu {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 454px) {
+    .social span {
+        display: none;
     }
 }

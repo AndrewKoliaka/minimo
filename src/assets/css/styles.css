@@ -321,6 +321,11 @@ ul {
 ul li {
   display: inline-block;
 }
+@media (max-width: 454px) {
+  h2 {
+    font-size: 1.5em;
+  }
+}
 @font-face {
   font-family: 'PlayfairDisplay';
   src: url('../fonts/PlayfairDisplay-Black/PlayfairDisplay-Black.eot');
@@ -425,29 +430,76 @@ ul li {
   color: #626262;
   border-color: #626262;
 }
+@media (max-width: 992px) {
+  .articles img {
+    height: 250px;
+  }
+}
+@media (max-width: 767px) {
+  .articles {
+    padding-top: 70px;
+  }
+  .articles img {
+    height: auto;
+    max-width: 100%;
+  }
+  .articles p {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 454px) {
+  .articles h2 {
+    margin-bottom: 15px;
+  }
+  .articles h4 {
+    margin: 10px 0;
+  }
+  .articles .load_more_btn {
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1em;
+  }
+}
 footer {
   margin-top: 150px;
   background-color: #f0f0f0;
   height: 97px;
 }
-footer .footer_el {
+footer #footer_line {
   margin-top: 36.5px;
 }
-footer .footer_el li {
+footer #footer_line li {
   margin-left: 18px;
 }
-footer .footer_el .footer_menu li a {
+footer #footer_line .footer_menu li a {
   font-size: 1em;
   color: black;
 }
-footer .footer_el .footer_menu li a:hover {
+footer #footer_line .footer_menu li a:hover {
   color: #626262;
 }
-footer .footer_el .social a {
+footer #footer_line .social a {
   color: #626262;
 }
-footer .footer_el .social a:hover {
+footer #footer_line .social a:hover {
   color: black;
+}
+@media (max-width: 767px) {
+  footer #footer_line {
+    text-align: center;
+  }
+  footer #footer_line .social {
+    float: none;
+  }
+  footer #footer_line .footer_menu {
+    display: none;
+  }
+}
+@media (max-width: 454px) {
+  .social span {
+    display: none;
+  }
 }
 header {
   padding-top: 70px;
@@ -476,6 +528,58 @@ header nav ul li a {
 header nav ul li a:hover {
   color: #626262;
 }
+#menu-trigger {
+  display: none;
+}
+@media (max-width: 992px) {
+  #logo {
+    margin-left: 10px;
+  }
+  header nav ul {
+    margin-right: 10px;
+  }
+  header nav ul li {
+    margin-right: 50px;
+  }
+}
+@media (max-width: 758px) {
+  #menu-trigger {
+    cursor: pointer;
+    font-family: Ubuntu-Light;
+    margin-right: 10px;
+    font-size: 2em;
+    line-height: 1;
+    display: block;
+    margin-top: -4.5px;
+  }
+  #menu-trigger:hover {
+    color: gray;
+  }
+  header {
+    height: 470px;
+  }
+  header #logo {
+    margin-left: 10px;
+  }
+  header ul {
+    display: none;
+    border-top: thin solid #b4ad9e;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    background-color: white;
+  }
+  header ul li {
+    margin-left: 10px;
+    margin-top: 15px;
+    display: block;
+  }
+  header ul li:last-of-type {
+    margin-bottom: 15px;
+  }
+}
 #newsletter {
   background-color: #f0f0f0;
   height: 287px;
@@ -494,6 +598,21 @@ header nav ul li a:hover {
   background: url('../images/send-icon.png') no-repeat right;
   line-height: 1.714em;
   padding: 5px 0;
+}
+@media (max-width: 454px) {
+  #newsletter {
+    height: 200px;
+    padding: 50px 10px 0 10px;
+  }
+  #newsletter input[type='email'] {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media (max-width: 234px) {
+  #newsletter input[type='email'] {
+    background: none;
+  }
 }
 #weekend {
   text-align: left;

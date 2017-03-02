@@ -1,19 +1,39 @@
 #newsletter {
+    @primaryColor: #333333;
     background-color: @bg_gray;
     height: 287px;
     padding-top: 73px;
     h2 {
-        color: #333333;
+        color: @primaryColor;
     }
     input[type='email'] {
         margin-top: 80px;
         width: 399px;
         border: none;
         border-bottom: 1px solid black;
-        color: #333333;
+        color: @primaryColor;
         font-family: PlayfairDisplay, sans-serif;
         background: url('../images/send-icon.png') no-repeat right;
         line-height: 1.714em;
         padding: 5px 0;
+    }
+}
+
+@media (max-width: 454px) {
+    #newsletter {
+        height: 200px;
+        padding: 50px 10px 0 10px;
+        input[type='email'] {
+            width: 100%;
+            margin-top: 30px;
+        }
+    }
+}
+
+@media (max-width: 234px) {
+    #newsletter {
+        input[type='email'] {
+            background: none;
+        }
     }
 }

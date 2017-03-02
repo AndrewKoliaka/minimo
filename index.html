@@ -3,6 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="andrew koliaka">
     <title>minimo</title>
     <link rel="stylesheet" href="src/assets/libs/bootstrap-grid-only/grid12.css">
     <link rel="stylesheet" href="src/assets/css/styles.css">
@@ -12,7 +15,8 @@
     <header>
         <nav class="container">
             <div class="row">
-                <a href="#" class="left"><img src="src/assets/images/logo.png" alt="logo"></a>
+                <a href="#" id="logo" class="left"><img src="src/assets/images/logo.png" alt="logo"></a>
+                <span id="menu-trigger" class="right">&#9776;</span>
                 <ul class="right">
                     <li><a href="#">lifestyle</a></li>
                     <li><a href="#">photodiary</a></li>
@@ -22,6 +26,7 @@
             </div>
         </nav>
     </header>
+    <!-- header -->
     <section id="weekend">
         <div class="container">
             <div class="row">
@@ -34,16 +39,17 @@
             </div>
         </div>
     </section>
+    <!-- weekend -->
     <section class="articles">
         <div class="container">
             <div class="row">
-                <article class="col-md-offset-1 col-md-5">
+                <article class="col-md-offset-1 col-lg-offset-1 col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img1.jpg">
                     <h4><a href="#">lifestyle</a></h4>
                     <h2><a href="#">More than just a music festival</a></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                 </article>
-                <article class="col-md-5">
+                <article class="col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img2.jpg">
                     <h4><a href="#">lifestyle</a></h4>
                     <h2><a href="#">Life tastes better with coffee</a></h2>
@@ -51,13 +57,13 @@
                 </article>
             </div>
             <div class="row">
-                <article class="col-md-offset-1 col-md-5">
+                <article class="col-md-offset-1 col-lg-offset-1 col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img3.jpg">
                     <h4><a href="#">photodiary</a></h4>
                     <h2><a href="#">American dream</a></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                 </article>
-                <article class="col-md-5">
+                <article class="col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img4.jpg">
                     <h4><a href="#">photodiary</a></h4>
                     <h2><a href="#">A day exploring the Alps</a></h2>
@@ -66,10 +72,11 @@
             </div>
         </div>
     </section>
+    <!-- articles 1 -->
     <section id="newsletter">
         <div class="container">
             <div class="row">
-                <div class="center" id="newsletter_content">
+                <div class="center">
                     <h2>Sign up for our newsletter!</h2>
                     <form>
                         <input type="email" name="newsletter" placeholder="Enter a valid email address">
@@ -78,16 +85,17 @@
             </div>
         </div>
     </section>
+    <!-- newsletter -->
     <section class="articles">
         <div class="container">
             <div class="row">
-                <article class="col-md-offset-1 col-md-5">
+                <article class="col-md-offset-1 col-lg-offset-1 col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img5.jpg">
                     <h4><a href="#">lifestyle</a></h4>
                     <h2><a href="#">Top 10 song for running</a></h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
                 </article>
-                <article class="col-md-5">
+                <article class="col-sm-6 col-md-5 col-lg-5">
                     <img src="src/assets/images/img6.jpg">
                     <h4><a href="#">lifestyle</a></h4>
                     <h2><a href="#">Cold winter days</a></h2>
@@ -101,32 +109,38 @@
             </div>
         </div>
     </section>
+    <!-- articles 2 -->
     <footer>
         <div class="container">
             <div class="row">
-                <div class="left footer_el col-md-offset-1">
-                    <ul class="footer_menu">
-                        <li><a href="#">Terms and conditions</a></li>
-                        <li><a href="#">Privacy</a></li>
-                    </ul>
-                </div>
-                <div class="right footer_el">
-                    <span>Follow</span>
-                    <ul class="social">
-                        <li>
-                            <a href="#" class="icon-facebook"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon-twitter"></a>
-                        </li>
-                        <li>
-                            <a href="#" class="icon-instagram"></a>
-                        </li>
-                    </ul>
+                <div id="footer_line">
+                    <div class="footer_menu left col-md-offset-1">
+                        <ul>
+                            <li><a href="#">Terms and conditions</a></li>
+                            <li><a href="#">Privacy</a></li>
+                        </ul>
+                    </div>
+                    <div class="social right">
+                        <span>Follow</span>
+                        <ul>
+                            <li>
+                                <a href="#" class="icon-facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-twitter"></a>
+                            </li>
+                            <li>
+                                <a href="#" class="icon-instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </footer>
+    <!-- footer -->
+    <script src="src/assets/libs/jquery/jquery.min.js"></script>
+    <script src="src/js/menuToggle.js"></script>
 </body>
 
 </html>
